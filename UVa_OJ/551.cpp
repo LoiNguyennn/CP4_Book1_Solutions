@@ -45,11 +45,10 @@ int main() {
     string in;
     while (cin >> in) {
         int i;
-        if (check(in, i)) {
+        if (check(in, i))
             cout << "YES\n";
-        } else {
+        else 
             cout << "NO " << i + 1 << endl;
-        }
     }
     return 0;
 }
