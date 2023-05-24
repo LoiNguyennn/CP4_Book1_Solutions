@@ -29,7 +29,6 @@ void backtrack(int n, bool used[]) {
 }
 
 int main() {
-	freopen("input.txt", "r", stdin);
 	int TC;
 	cin >> TC;
 	while (TC--) {	
