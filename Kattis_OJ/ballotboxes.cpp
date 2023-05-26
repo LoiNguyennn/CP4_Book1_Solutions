@@ -12,7 +12,6 @@ bool operator < (const City& a, const City& b) {
 }
 
 int main() {	
-	freopen("input.txt", "r", stdin);
 	int N, B;
 	while (cin >> N >> B) {
 		if (N == -1 && B == -1)
