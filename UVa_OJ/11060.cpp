@@ -3,7 +3,6 @@
 using namespace std;
 
 int main() {
-	freopen("input.txt", "r", stdin);
 	int N;
 	int test_case = 1;
 	while (cin >> N) {
