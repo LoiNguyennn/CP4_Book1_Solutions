@@ -16,7 +16,6 @@ void kosaraju(string u, unordered_map<string, vector<string>>& AL, int pass) {
 }
 
 int main() {
-	freopen("input.txt", "r", stdin);
 	int P, T;
 	while (cin >> P >> T) {
 		if (P == 0 && T == 0) break;
@@ -53,7 +52,7 @@ int main() {
 	
 		for (int i = 0; i < name.size(); ++i)
 			visited[name[i]] = 0;
-		
+
 		int numSCCs = 0;
 		while (!St.empty()) {
 			string u = St.top();
