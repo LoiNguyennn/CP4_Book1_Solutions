@@ -11,23 +11,23 @@ ll memo[110][110];
 ll n, k;
 
 ll dp(ll remN, ll remK) {
-	if (remK == 1) return 1;
+    if (remK == 1) return 1;
 
-	ll& ans = memo[remN][remK];
-	if (ans != -1) return ans;
+    ll& ans = memo[remN][remK];
+    if (ans != -1) return ans;
 
-	ans = 0;
-	for (int i = 0; i <= remN; ++i)
-		ans += dp(remN - i, remK - 1) % MOD;
-	return ans % MOD;
+    ans = 0;
+    for (int i = 0; i <= remN; ++i)
+        ans += dp(remN - i, remK - 1) % MOD;
+    return ans % MOD;
 }
 
 int main() {
-	while (cin >> n >> k) {
-		if (n == 0 && k == 0)
-			break;
-		memset(memo, -1, sizeof(memo));
-		cout << dp(n, k) % MOD << endl;
-	}
-	return 0;
+    while (cin >> n >> k) {
+        if (n == 0 && k == 0)
+            break;
+        memset(memo, -1, sizeof(memo));
+        cout << dp(n, k) % MOD << endl;
+    }
+    return 0;
 }

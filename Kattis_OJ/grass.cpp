@@ -5,12 +5,12 @@
 using namespace std;
 
 int main() {
-	ios_base::sync_with_stdio(false);
-	cin.tie(0);
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
 
-	double n, l, w;
-	while (cin >> n >> l >> w) {
-		vector<pair<double, double>> segment;
+    double n, l, w;
+    while (cin >> n >> l >> w) {
+        vector<pair<double, double>> segment;
         for (int i = 0; i < n; i++) {
             double c, r;
             cin >> c >> r;
@@ -19,7 +19,7 @@ int main() {
             segment.push_back(make_pair(c - sqrt(x), c + sqrt(x)));
         }
 
-		sort(segment.begin(), segment.end());
+        sort(segment.begin(), segment.end());
        
         bool possible = true;
         double covered = 0;
@@ -50,6 +50,6 @@ int main() {
             cout << -1 << endl;
         else
             cout << ans << endl;
-	}
-	return 0;
+    }
+    return 0;
 }
