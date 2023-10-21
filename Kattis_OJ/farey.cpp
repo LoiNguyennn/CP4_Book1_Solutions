@@ -13,6 +13,7 @@ int main() {
                 EulerPhi[j] -= EulerPhi[j] / i;
     
     int dp[MAX_N] = {0};
+    
     dp[1] = 2;
 
     for (int i = 2; i < MAX_N; ++i) {
