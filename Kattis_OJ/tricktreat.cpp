@@ -16,7 +16,6 @@ double F(double x) {
 }
 
 int main() {
-    freopen("input.txt", "r", stdin);
     int n;
     while (cin >> n && n) {
         for (int i = 0; i < n; ++i) {
