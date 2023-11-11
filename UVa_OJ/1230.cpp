@@ -21,5 +21,6 @@ int main() {
         cin >> x >> p >> n;
         cout << fast_pow(x, p) << endl;
     }
+    cin >> TC;
     return 0;
 }
